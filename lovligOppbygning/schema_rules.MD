@@ -1,10 +1,9 @@
 
-##
-Opprett 2 filer på (f.eks.) www.xyz.no:
-personer.xml
-personer.xsd
-XML-filen refererer til XML-skjemaet:
-
+## Opprett 2 filer på (f.eks.) www.xyz.no:
+## personer.xml
+## personer.xsd
+## XML-filen refererer til XML-skjemaet:
+```
 <?xml version="1.0" encoding="utf-8"?>
 <personer
 xmlns="http://home.hvl.no"
@@ -15,4 +14,14 @@ xsi:schemaLocation=
 <person>…</person>
 <person>…</person>
 </personer>
-##
+```
+
+## Et element kan ha disse datatypene:
+```
+    string
+    decimal
+    integer
+    boolean
+    date
+    time
+```
