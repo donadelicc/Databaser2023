@@ -51,13 +51,13 @@
                 <xs:element name="characters">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="character">
-                                <xs:element name="name" type="character"/>
-                                <xs:element name="class" type="character"/>
-                                <xs:element name="level" type="character"/>
-                                <xs:element name="health" type="character"/>
-                                <xs:element name="strengt" type="characted"/>
-                            </xs:element>
+                            <xs:complexType name="character">
+                                <xs:attribute name="name" type="character" use="required"/>
+                                <xs:attribute name="class" type="character" use="required"/>
+                                <xs:attribute name="level" type="character"  use="required"/>
+                                <xs:attribute name="health" type="character"/>
+                                <xs:attribute name="strengt" type="characted"/>
+                            </xs:complexType>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
