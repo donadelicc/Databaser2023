@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasyGame>
+    <characters>
+        <character>
+            <name>August the great</name>
+            <class>Gentleman</class>
+            <level>9000</level>
+            <experience>0</experience>
+            <health>1000</health>
+            <mana>900</mana>
+            <strength>10000</strength>
+            <abilities>
+                <ability>
+                    <name>Rizz</name>
+                    <description>Super effective charm ability</description>
+                    <powerlevel>9000</powerlevel>
+                </ability>
+                <ability>
+                    <name>Joke</name>
+                    <description>Super effective seduction ability</description>
+                    <powerlevel>9000</powerlevel>
+                </ability>
+            </abilities
+        </character>
+    </characters>
+    <worlds>
+        <world>
+            <name>Bergen</name>
+            <description>Byen Under Skyen</description>
+        <world>
+    </worlds>
+    <weapons>
+        <weapon>
+            <name>Longsword</name>
+            <description>A long sword</description>
+            <damage>9000</damage>
+            <type>Melee</type>
+        </weapon>
+    </weapons>
+</fantasyGame>
