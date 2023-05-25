@@ -7,8 +7,6 @@
             <level>9000</level>
             <experience>0</experience>
             <health>1000</health>
-            <mana>900</mana>
-            <strength>10000</strength>
             <abilities>
                 <ability>
                     <name>Rizz</name>
@@ -23,18 +21,4 @@
             </abilities
         </character>
     </characters>
-    <worlds>
-        <world>
-            <name>Bergen</name>
-            <description>Byen Under Skyen</description>
-        <world>
-    </worlds>
-    <weapons>
-        <weapon>
-            <name>Longsword</name>
-            <description>A long sword</description>
-            <damage>9000</damage>
-            <type>Melee</type>
-        </weapon>
-    </weapons>
 </fantasyGame>

@@ -1,1 +1,53 @@
-<xs:SimpleType
+ <?xml version="1.0" encoding="UTF-8" ?>
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ <xs:simpleType name="navntype">
+    <xs:restriction base="xs:string">
+        <xs:maxLength value="25"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="klassetype">
+    <xs:restriction base="xs:string">
+        <xs:maxLength value="25"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="leveltype">
+    <xs:restriction base="xs:integer">
+    </xs:restriction>
+</xs:simpleType>
+
+ <xs:simpleType name="experiencetype">
+    <xs:restriction base="xs:integer">
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="healthtype">
+    <xs:restriction base="xs:integer">
+    </xs:restriction>
+</xs:simpleType>
+
+
+
+<xs:complexType name="abilitytype">
+    <xs:sequence>
+        <xs:element name = "name" type = "xs:string"/>
+        <xs:element name = "description" type = "xs:string"/>
+        <xs:element name = "powerlevel" type = "xs:integer"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="charactertype">
+    <xs:sequence>
+        <xs:element name = "name" type = "xs:navntype"/>
+        <xs:element name = "class" type = "xs:klassetype"/>
+        <xs:element name = "level" type = "xs:leveltype"/>
+        <xs:element name = "experience" type = "xs:experiencetype"/>
+        <xs:element name = "health" type = "healthtype"/>
+        <xs:element name="abilities" type="abilitytype" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>
+
