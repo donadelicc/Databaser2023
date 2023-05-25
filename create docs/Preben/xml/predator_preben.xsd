@@ -130,7 +130,7 @@
     </xs:complexType>
 
     <!-- Abilities -->
-    <xs:complexType name="abillityType">
+    <xs:complexType name="abilityType">
         <xs:attribute name="rizz" type="rizzType" use="required"/>
         <xs:attribute name="intelligence" type="intelligenceType" use="required"/>
     </xs:complexType>
@@ -159,7 +159,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="abilities" type="abillityType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="abilities" type="abilityType" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
