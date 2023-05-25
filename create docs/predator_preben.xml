@@ -5,9 +5,7 @@
             <name>Predetor Preben</name>
             <class>Warrior</class>
             <level>99</level>
-            <experience>0</experience>
             <health>100</health>
-            <mana>90</mana>
             <strength>100</strength>
         </character>
     </characters>
@@ -15,10 +13,6 @@
         <world>
             <name>The moon</name>
             <description>It's a big rock in space</description>
-            <location>
-                <x>0</x>
-                <y>0</y>
-            </location>
         </world>
     </worlds>
     <weapons>
@@ -29,4 +23,8 @@
             <type>Melee</type>
         </weapon>
     </weapons>
+    <abilities>
+            <rizz>Legendary</rizz>
+            <intelligence>Newtonian</intelligence>
+    </abilities>
 </fantasyGame>        
