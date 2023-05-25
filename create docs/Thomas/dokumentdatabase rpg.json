@@ -1,0 +1,46 @@
+{
+    "navn": "TheLegend",
+    "ID": 1,
+    "Race": "Goblin",
+    "Class": "Mage",
+    "Level": 99,
+    "Abilities": [
+        {
+            "Name": "Goblinmode",
+            "Descriprion": "ÅNEI goblimode",
+            "Power level": 90000
+    },
+    {
+        "Name": "Sarkasme",
+        "Descriprion": "haha",
+        "Power level": 10000000
+    }
+    ],
+    "Items": [
+        {
+            "Name": "Dildo",
+            "Type": "Sverd",
+            "Properties": {
+                "Color": "Pink",
+                "Size": "Extra large" 
+            }
+        },
+        {
+            "Name": "Goblin mail",
+            "Type": "Mail",
+            "Properties": {
+                "Style": "Sexy",
+                "Wearable": false
+            }
+        }
+    ],
+    "Parties":
+    [
+        {
+            "Name": "Goblinparty",
+            "Associate_IDs": ["1","2"]
+        }
+    ]
+
+}
+

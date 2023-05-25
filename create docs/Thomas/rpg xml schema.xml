@@ -1,0 +1,68 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="characters">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="character">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Navn" type="xs:string"/>
+                            <xs:element name="Race" type="xs:string"/>
+                            <xs:element name="Class" type="xs:string"/>
+                            <xs:element name="Level" type="xs:integer"/>
+                            <xs:element name="Abilities" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ability" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="Name" type="xs:string"/>
+                                                <xs:element name="Des" type="xs:string"/>
+                                                <xs:elemetn name="Powerlvl" type"xs:nteger"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Items" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="item" maxOccurs="unbounded">
+                                             <xs:element name="Name" type="xs:string"/>
+                                            <xs:elemetn name="Type" type="xs:string"/>
+                                            <xs:element name="Properties" minOccurs="0">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="Property" maxOccurs="onbounded">
+                                                            <xs:element name="Color" type="xs:string"/>
+                                                            <xs:element name="Size" type="xs:string"/>
+                                                            <xs:element name="Style" type="xs:string"/>
+                                                            <xs:elemetn name="wearable" type="xs:boolean"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="parties" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Name"/>
+                                        <xs:element name="Associates" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:squence>
+                                                    <xs:element name="ID"  type="xs:string" maxOccurs="unBounded"/>
+                                                </xs:squence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
