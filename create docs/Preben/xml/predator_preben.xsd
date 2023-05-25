@@ -70,7 +70,7 @@
 
         <!-- Description -->
         <xs:simpleType name="weaponDescriptionType">
-            <xs:restriction base="xs:integer">
+            <xs:restriction base="xs:string">
                 <xs:maxLength value="100"/>
             </xs:restriction>
         </xs:simpleType>
