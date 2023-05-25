@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Characters>
+    <Character ID="1" Navn="Thelegend" Race="Goblin" Class="Mage" Level="99">
+        <Abilities>
+            <Ability Name="Goblinmode" Des="Ånei" Powerlvl="9000"/>
+            <Ability Name="Sarkasme" Des="Haha" Powerlvl="100000"/>
+        </Abilities>
+        <Items>
+            <Item Name="Dildo" Type="Sverd">
+                <Properties Color="Pink" Size="Extra large"/>
+            </Item>
+            <Item Name="Goblin mail" Type="Mail">
+                <Properties Style="Sexy" Wearable="False"/>
+            </Item>
+        </Items>
+        <Parties>
+            <Party Name="Goblinparty">
+                <Associates>
+                    <Associate_ID>1</Associate_ID>
+                    <Associate_ID>2</Associate_ID>
+                </Associates>
+            </Party>
+        </Parties>
+    </Character>
+</Characters>
