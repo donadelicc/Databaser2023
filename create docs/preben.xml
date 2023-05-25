@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasyGame>
+    <characters>
+        <character>
+            <name>Predetor Preben</name>
+            <class>Warrior</class>
+            <level>99</level>
+            <experience>0</experience>
+            <health>100</health>
+            <mana>90</mana>
+            <strength>100</strength>
+        </character>
+    <worlds>
+        <world>
+            <name>The moon</name>
+            <description>It's a big rock in space</description>
+            <location>
+                <x>0</x>
+                <y>0</y>
+            </location>
+        <world>
+    </worlds>
+    <weapons>
+        <weapon>
+            <name>Wooden sword</name>
+            <description>A sword made of wood</description>
+            <damage>10</damage>
+            <type>Melee</type>
+        </weapon>
+    </weapons>
+</fantasyGame>
+
+
+        
+
