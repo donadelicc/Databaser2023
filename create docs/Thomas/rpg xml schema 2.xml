@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="namespace">
+
+    <xs:simpleType name="navnType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength Value="25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="levelType">
+        <xs:restriciton base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriciton>
+    </xs:simpleType>
+
+    <xs:simpleType name="classType">
+        <xs:restriciton base="xs:string">
+            <xs:maxLength Value="25"/>
+        </xs:restriciton>
+    </xs:simpleType>
+
+    <xs:simpleType name="raceType">
+        <xs:restriciton base="xs:string">
+            <xs:maxLength Value="10"/>
+        </xs:restriciton>
+    </xs:simpleType>
+
+    <xs:simpleType name="typeType">
+        <xs:restriciton base="xs:string">
+            <xs:maxLength Value="10"/>
+        </xs:restriciton>
+    </xs:simpleType>
+
+    <xs:simpleType name="styleType">
+        <xs.restriciton base ="xs:string">
+            <xs:maxLength Value="40"/>
+        </xs.restriciton>
+    </xs:simpleType>
+
+    <xs:simpleType name="descriptionType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="propertiesType">
+        <xs:attribute name="Color" type="descriptionType" use="optional"/>
+        <xs:attribute name="Style" type="descriptionType" use="optional"/>
+    </xs:complexType>
+    
+    <xs:complexType name="abilityType">
+        <xs:attribute name="Name" type="navnType" use="required"/>
+        <xs:attribute name="description" type="descriptionType" use="required"/>
+        <xs:attribute name="Powerlvl" type="levelType" use="required"/>
+    </xs:complexType>
+
+    <xs:complextype name="abilitiesType">
+        <xs:element name="Ability" type="abilityType" minOccurs="1" maxOccurs="3"/>
+    </xs:complextype>
+
+    <xs:complexType name="itemType">
+        <xs:attribute name="Name" type="navnType" use="required"/>
+        <xs:attribute name="Type" type="navnType" use="required"/>
+        <xs:element name="property" type="propertiesType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="itemsType">
+        <xs:element name="Item" type="itemType" minOccurs="0" maxOccurs="99"/>
+    </xs:complexType>
+
+    <xs:complexType name="associateType">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="associatesType">
+        <xs:element name="associates" type="associateType"/>
+    </xs:complexType>
+
+    <xs:complexType name="partiesType">
+        <xs:sequence>
+            <xs:element name="associates" type="associateTypes"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="partyType">
+        <xs:element name="party" type="partiesType"/>
+    </xs:complexType>
+
+    <xs:complexType name="CharactersType">
+        <xs:element name="party" type="partyType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="Items" type="itemsType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="abilities" type="abilitesType" minOccurs="0" maxOccurs="1"/>
+        <xs:attribute name="Name" type="navnType" use="required"/>
+        <xs:attribute name="Class" type="classType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="CharacterType">
+        <xs:element name="Character" type="charactersType" maxOccurs="10000"/>
+    </xs:complexType>
+ </xs:schema>
