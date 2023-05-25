@@ -25,3 +25,33 @@ xsi:schemaLocation=
     date
     time
 ```
+## Restriksjon på enkle datatyper
+## Lengde(antall tegn)
+```
+<xs:simpleType name="fornavn_t">
+<xs:restriction base="xs:string">
+<xs:maxLength value="20"/>
+</xs:restriction>
+</xs:simpleType>
+```
+## Intervall
+```
+<xs:simpleType name="pnr_t">
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="1"/>
+<xs:maxInclusive value="500"/>
+</xs:restriction>
+</xs:simpleType>
+```
+## Mønster
+```
+<xs:simpleType name="regnr_t">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z]{2}[0-9]{5}"/>
+</xs:restriction>
+</xs:simpleType>
+```
+
+
+
+
