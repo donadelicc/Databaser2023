@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasyGame>
+    <characters>
+        <character
+            name="Predotor Preben"
+            class="Warrior"
+            level="99"
+            health="100"
+            strength="100"
+        >
+        </character>
+    </characters>
+    <worlds>
+        <world
+            name="The moon"
+            description="It's a big rock in space"
+        >
+        </world>
+    </worlds>
+    <weapons>
+        <weapon
+            name="Wooden sword"
+            description="A sword made of wood"
+            damage="10"
+            type="Melee"
+        >
+        </weapon>
+    </weapons>
+    <abilities
+        rizz="Legendary"
+        intelligence="Newtonian"
+    >
+    </abilities>
+</fantasyGame>        
