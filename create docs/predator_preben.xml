@@ -10,6 +10,7 @@
             <mana>90</mana>
             <strength>100</strength>
         </character>
+    </characters>
     <worlds>
         <world>
             <name>The moon</name>
@@ -18,7 +19,7 @@
                 <x>0</x>
                 <y>0</y>
             </location>
-        <world>
+        </world>
     </worlds>
     <weapons>
         <weapon>
@@ -28,8 +29,4 @@
             <type>Melee</type>
         </weapon>
     </weapons>
-</fantasyGame>
-
-
-        
-
+</fantasyGame>        
