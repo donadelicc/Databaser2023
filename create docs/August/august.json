@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+       "name" : {
+            "type" : "string"
+       },
+       "level" : {
+            "type" : "integer",
+            "minimum": 0
+       },
+       "experience" : {
+            "type" : "integer",
+            "minimum": 0
+       },
+       "health" : {
+            "type" : "integer",
+            "minimum": 0
+       },
+       "class" : {
+            "type" : "string"
+       },
+       
+       "abilities" : {"type": "array", "properties": {
+
+        "ability" : {
+            "name" : {
+                "type" : "string"
+            },
+            "Descriprion" : {
+                "type" : "string"
+            },
+            "powerlevel" : {
+                "type" : "integer"
+            }
+        },
+        "required": ["name", "Descriprion", "powerlevel"]
+    }}
+
+}, "required": ["name", "experience", "health", "calss", "abilities"]
+}
