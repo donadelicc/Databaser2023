@@ -1,0 +1,28 @@
+{
+    "@schema:": "namespace",
+    "type": "object",
+    "properties": {
+        "@navn": {
+            "type": "string"
+        },
+        "@race": {
+            "type": "string"
+        },
+        "Abilities": {
+            "type": "array",
+            "items": {
+                "type":"object",
+                "properties": {
+                    "@Style": {
+                        "type":"string"
+                    },
+                    "@Wearable": {
+                        "type": "boolean"
+                    }
+                },
+                "required":["@Style","@Wearable"]
+            }
+        }
+    },
+    "required":["@navn",".."]
+}

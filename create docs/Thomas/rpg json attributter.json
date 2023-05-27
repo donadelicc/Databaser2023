@@ -1,0 +1,28 @@
+{
+    "@navn": "Thelegend",
+    "@race": "Goblin",
+    "Abilitites": [
+        {
+            "@navn": "Goblinmode",
+            "@des": "Ånei"
+        },
+        {
+            "@navn": "Sarkasme",
+            "@des": "Haha"
+        }
+    ],
+    "items": [
+        {
+        "property": {
+            "@Style": "Sexy",
+            "@Wearable": "false"
+        }
+        },
+        {"property": {
+            "@Style": "ukult",
+            "@wearabel": "true"
+        }
+        }
+    
+    ]
+}
