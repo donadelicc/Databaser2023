@@ -1,0 +1,52 @@
+{
+    "$Schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "kunde": {
+            "type": "object",
+            "properties": {
+                "navn": {
+                    "type": "string",
+                    "maxLength": 50
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "saldo": {
+                    "type": "integer",
+                    "pattern": "^[0-9]*$"
+                }
+            },
+            "required": ["navn", "saldo", "adresse"]
+        },
+        "ordre": {
+                "type": "object",
+                "properties" : {
+                    "ordre_id": {
+                        "type": "integer"
+                        },
+                    "kunde_id": {
+                        "type": "integer"
+                        },
+                    "ordre_dato": {
+                        "type": "string",
+                        "format": "date"
+                        },
+                    "produkt": {
+                        "type": "array",
+                        "items": {
+                            "produkt_id": {
+                                "type": "integer"
+                                },
+                            "produkt_navn": {
+                                "type": "string"
+                                },
+                            "produkt_pris": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

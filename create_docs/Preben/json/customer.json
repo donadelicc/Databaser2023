@@ -1,0 +1,24 @@
+{
+    "kunde":
+        {
+        "navn": "Donald Duck",
+        "saldo": 200000,
+        "adresse": "Andebyvej 1"
+        },
+    "ordre": 
+        {
+        "ordre_id": 1,
+        "kunde_id": 1,
+        "ordre_dato": "2019-01-01",
+        "produkt": [{
+            "produkt_id": 1,
+            "produkt_navn": "Bil",
+            "produkt_pris": 100000
+            },
+            {
+            "produkt_id": 2,
+            "produkt_navn": "Båd",
+            "produkt_pris": 100000
+            }]
+        }
+}
